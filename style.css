@@ -1,0 +1,124 @@
+body {
+    background-image: url('flankk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .todo-wrapper {
+    background-color:rgba(1, 36, 56, 0.705);
+    opacity: 0,5;
+    padding: 30px;
+    border-radius: 22px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    text-align: center;
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+    text-align: center;
+    color: rgb(248, 142, 4);
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    color: rgb(248, 142, 4);
+    text-align: center;
+}
+
+.todo-wrapper ol {
+    margin: 30px 0;
+}
+
+.todo-wrapper ol li {
+    color: rgb(248, 142, 4);
+    margin: 10px;
+    padding: 3px;
+    text-align: justify;
+    transition: all 0.5s ease-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background:darkgrey;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper .pretty-button {
+    background-color: yellowgreen;
+    border-radius: 17px;
+    border: none;
+    padding: 4px 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+}
+
+.todo-wrapper .pretty-button:hover {
+    color:rgb(247, 244, 244);
+    cursor: pointer;
+}
+
+.todo-wrapper input {
+    padding: 3px 6px;
+    text-align: center;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+    text-align: center;
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button {
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button {
+    background-color: rgb(236, 58, 64);
+}
+
+.todo-wrapper #save-button {
+    background-color: rgb(7, 79, 187);
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
